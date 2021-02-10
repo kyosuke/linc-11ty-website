@@ -103,3 +103,6 @@ _site
 
 # TernJS port file
 .tern-port
+
+/.fab
+/fab.zip

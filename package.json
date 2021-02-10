@@ -4,7 +4,10 @@
   "description": "lincを使って11tyで作られたサイトをデプロイするサンプル",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "build:fab": "npm run build && npm run fab:build",
+    "fab:build": "fab build",
+    "fab:serve": "fab serve fab.zip"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,12 @@
   "homepage": "https://github.com/kyosuke/linc-11ty-website#readme",
   "private": true,
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1"
+    "@11ty/eleventy": "^0.11.1",
+    "@fab/actions": "^1.0.0-rc.9",
+    "@fab/cli": "^1.0.0-rc.9",
+    "@fab/input-static": "^1.0.0-rc.9",
+    "@fab/plugin-render-html": "^1.0.0-rc.9",
+    "@fab/plugin-rewire-assets": "^1.0.0-rc.9",
+    "@fab/server": "^1.0.0-rc.9.p1"
   }
 }
