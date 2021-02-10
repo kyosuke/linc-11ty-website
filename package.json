@@ -1,0 +1,22 @@
+{
+  "name": "linc-11ty-website",
+  "version": "1.0.0",
+  "description": "lincを使って11tyで作られたサイトをデプロイするサンプル",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyosuke/linc-11ty-website.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kyosuke/linc-11ty-website/issues"
+  },
+  "homepage": "https://github.com/kyosuke/linc-11ty-website#readme",
+  "private": true,
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  }
+}
